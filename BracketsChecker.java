@@ -35,5 +35,5 @@ public class BracketsChecker {
 			System.out.println("\n\nCompilation Error : closing bracket(s) missing \n\n© github.com/sharanstark 2k19" );
 		}
 	  }
-	}
+	} 
 }
