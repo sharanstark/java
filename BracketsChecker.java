@@ -3,7 +3,7 @@ import java.util.*;
 public class BracketsChecker {
 
 	public static void main(String[] args) {
-		System.out.println("- - -Brackets Checker [ without stack ] - - -\n\n");
+		System.out.println("- - - Brackets Checker [ without stack ] - - -\n\n");
 		Scanner scan=new Scanner(System.in);
 		System.out.print("Input : " );
 		String s = scan.nextLine();
