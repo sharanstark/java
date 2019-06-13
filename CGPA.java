@@ -1,4 +1,4 @@
-
+package java_prac;
 import java.util.*;
 
 class Current extends CGPA{
