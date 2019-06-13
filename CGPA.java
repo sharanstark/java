@@ -48,7 +48,7 @@ class Current extends CGPA{
 		System.out.println("\nFind your GPA from -> https://ce.ksrei.org \n");
 		for(int i=1;i<=6;i++) {
 			System.out.print("Enter sem "+(i)+" GPA :");
-			double temp=0;
+			
 			int div=1;
 			if(i==2 || i==3 || i==5 ) div=25;
 			if(i==1 || i==6) div=24;
@@ -66,6 +66,7 @@ class Current extends CGPA{
 		System.out.println("\n... exiting ...\n\n\n");
 			main (new String [] {});
 		}else if(c.equalsIgnoreCase("n")){
+			scan.close();
 			System.out.println("\n... exiting ...\n\n\n");
 		}else {
 			System.out.println("\n... Invalid choice ...\n\n\n");
@@ -80,7 +81,7 @@ public class CGPA {
 		Current obj = new Current();
 		Scanner scan= new Scanner(System.in);
 		System.out.println("- - -  GPA / CGPA CALCULATOR by STARKERS - - - \n\n");
-		System.out.print("Main Menu \n \n1.Calaculate currrent sem GPA\n2.Calculate overall CGPA\n\nEnter your choice : ");
+		System.out.print("Main Menu\n \n[ only for all clears ]\n \n1.Calaculate currrent sem GPA\n2.Calculate overall CGPA\n\nEnter your choice : ");
 		int choice = scan.nextInt();
 		System.out.println();
 		if(choice==1) {
@@ -88,8 +89,8 @@ public class CGPA {
 		}else if(choice==2) {
 			obj.result();
 		}else {
-			System.out.println("\n... Invalid choice try again ...\n\n\n");
-			main(new String[] {});
+			System.out.println("\n... Invalid choice exiting...\n\n\n");
+		scan.close();
 		}
 	}
 
